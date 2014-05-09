@@ -1,1 +1,58 @@
-Hello world.
+
+
+.left {
+	position: fixed;
+	width: 15%;
+	display: block;
+	border-right:1px solid #aaa;
+	z-index: 99;
+	height: 100%;
+	float: left;
+}
+li {
+	text-align: right;
+	list-style-type: none;
+	margin: 0;
+	padding: 5px 10px;
+	display: list-item;
+	line-height: 18px;
+}
+.main {
+	display: block;
+	float: left;
+	margin-left: 15%;
+	height: 100%;
+	border-right: solid 1px #aaa;
+	width: 70%;
+}
+
+p {
+	text-align: justify;
+	padding: 0 25px;
+}
+
+.right {
+	float: left;
+	width: 10%;
+	display: block;
+	position: relative;
+}
+
+h1 {
+	margin: auto;
+	padding: 10px;
+	font-size: 1em;
+	width: 100%;
+}
+
+@media only screen and (min-width : 0px) and (max-width : 500px) {
+	.left {
+		display: none;
+	}
+}
+
+@media only screen and (min-width : 0px) and (max-width : 760px) {
+	.right {
+		display: none;
+	}
+}
